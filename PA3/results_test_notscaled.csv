@@ -1,0 +1,41 @@
+Model,Classifier,Parameters,AUC-ROC,f1_score_5,f1_score_10,f1_score_20,Accuracy,Precision_5,Precision_10,Precision_20,Recall_5,Recall_10,Recall_20
+RF,"RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=1, max_features='sqrt', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=10, min_weight_fraction_leaf=0.0,
+            n_estimators=1, n_jobs=-1, oob_score=False, random_state=None,
+            verbose=0, warm_start=False)","{'max_depth': 1, 'max_features': 'sqrt', 'min_samples_split': 10, 'n_estimators': 1}",0.5234925275069026,0.12998266897746968,0.4441757355904877,0.4928409947249435,0.9346,0.15,0.36733333333333335,0.327,0.11467889908256881,0.5616717635066258,1.0
+DT,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=1,
+            max_features='sqrt', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=10, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","{'criterion': 'gini', 'max_depth': 1, 'max_features': 'sqrt', 'min_samples_split': 10}",0.6020541039432505,0.8665511265164645,0.6170898831116486,0.38457673951268523,0.9346,1.0,0.5103333333333333,0.25516666666666665,0.764525993883792,0.7803261977573904,0.7803261977573904
+KNN,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')","{'algorithm': 'auto', 'n_neighbors': 5, 'weights': 'uniform'}",0.6631108582141944,0.3448873483535529,0.37646110439338976,0.2961567445365486,0.9337666666666666,0.398,0.31133333333333335,0.1965,0.30428134556574926,0.47604485219164117,0.6009174311926605
+ET,"ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion='gini',
+           max_depth=1, max_features='sqrt', max_leaf_nodes=None,
+           min_impurity_split=1e-07, min_samples_leaf=1,
+           min_samples_split=10, min_weight_fraction_leaf=0.0,
+           n_estimators=1, n_jobs=-1, oob_score=False, random_state=None,
+           verbose=0, warm_start=False)","{'criterion': 'gini', 'max_depth': 1, 'max_features': 'sqrt', 'min_samples_split': 10, 'n_estimators': 1}",0.5490819798294713,0.8665511265164645,0.7218863361547763,0.44988696307460435,0.9346,1.0,0.597,0.2985,0.764525993883792,0.9128440366972477,0.9128440366972477
+AB,"AdaBoostClassifier(algorithm='SAMME',
+          base_estimator=DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=1,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'),
+          learning_rate=1.0, n_estimators=1, random_state=None)","{'algorithm': 'SAMME', 'n_estimators': 1}",0.6627861750751983,0.40843443096476023,0.7908101571946796,0.4928409947249435,0.9346,0.4713333333333333,0.654,0.327,0.36034658511722734,1.0,1.0
+GB,"GradientBoostingClassifier(criterion='friedman_mse', init=None,
+              learning_rate=0.1, loss='deviance', max_depth=1,
+              max_features=None, max_leaf_nodes=None,
+              min_impurity_split=1e-07, min_samples_leaf=1,
+              min_samples_split=2, min_weight_fraction_leaf=0.0,
+              n_estimators=1, presort='auto', random_state=None,
+              subsample=0.5, verbose=0, warm_start=False)","{'learning_rate': 0.1, 'max_depth': 1, 'n_estimators': 1, 'subsample': 0.5}",0.6627861750751983,0.40843443096476023,0.7908101571946796,0.4928409947249435,0.9346,0.4713333333333333,0.654,0.327,0.36034658511722734,1.0,1.0
+LR,"LogisticRegression(C=0.01, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l1', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'C': 0.01, 'penalty': 'l1'}",0.6812286354640734,0.25129982668977463,0.24788391777509067,0.21728208992715395,0.9347666666666666,0.29,0.205,0.14416666666666667,0.2217125382262997,0.31345565749235477,0.44087665647298674
+NB,GaussianNB(priors=None),{},0.6660935039449518,0.13056036972848065,0.18016928657799272,0.18563175081637778,0.9205666666666666,0.15066666666666667,0.149,0.12316666666666666,0.11518858307849134,0.22782874617737003,0.3766564729867482
+BASE_ZERO_CASE,BASE_ZERO_CASE,,0.6660935039449518,0.13056036972848065,0.18016928657799272,0.18563175081637778,0.9205666666666666,0.15066666666666667,0.149,0.12316666666666666,0.11518858307849134,0.22782874617737003,0.3766564729867482
